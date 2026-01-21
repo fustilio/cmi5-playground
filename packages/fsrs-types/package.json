@@ -1,0 +1,34 @@
+{
+  "name": "cmi5-fsrs-types",
+  "version": "0.0.1",
+  "description": "FSRS (Free Spaced Repetition Scheduler) types and utilities",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "ts-fsrs": "^4.2.0"
+  },
+  "devDependencies": {
+    "cmi5-tsconfig": "workspace:*",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "fsrs",
+    "spaced-repetition",
+    "learning",
+    "srs"
+  ],
+  "license": "MIT"
+}

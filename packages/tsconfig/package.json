@@ -1,0 +1,8 @@
+{
+  "name": "cmi5-tsconfig",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Shared TypeScript configuration for CMI5 packages",
+  "files": ["library.json", "app.json"],
+  "license": "MIT"
+}

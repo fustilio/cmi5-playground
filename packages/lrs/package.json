@@ -1,0 +1,44 @@
+{
+  "name": "cmi5-lrs",
+  "version": "0.0.1",
+  "description": "CMI5-compatible Learning Record Store (LRS) for xAPI statement storage and retrieval",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsx watch src/index.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@libsql/client-wasm": "^0.4.0",
+    "@xapi/cmi5": "^1.4.0",
+    "@xapi/xapi": "^3.0.2",
+    "drizzle-orm": "^0.29.3",
+    "ts-fsrs": "^4.2.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "cmi5-tsconfig": "workspace:*",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "xapi",
+    "tincan",
+    "lrs",
+    "learning-record-store",
+    "cmi5",
+    "learning-analytics"
+  ],
+  "license": "MIT"
+}

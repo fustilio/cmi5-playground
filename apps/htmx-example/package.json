@@ -1,0 +1,28 @@
+{
+  "name": "cmi5-htmx-example",
+  "version": "0.0.1",
+  "private": true,
+  "description": "HTMX example app demonstrating CMI5 learning analytics",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "cmi5-core": "workspace:*",
+    "cmi5-engine": "workspace:*",
+    "cmi5-lrs": "workspace:*",
+    "cmi5-fsrs-types": "workspace:*",
+    "@hono/node-server": "^1.8.0",
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "cmi5-tsconfig": "workspace:*",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,43 @@
+{
+  "name": "cmi5-core",
+  "version": "0.0.1",
+  "description": "CMI5 core types, constants, and utilities - framework-agnostic",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./unist": {
+      "types": "./dist/unist/index.d.ts",
+      "import": "./dist/unist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "unist-util-visit": "^5.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/unist": "^3.0.0",
+    "cmi5-tsconfig": "workspace:*",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "keywords": [
+    "cmi5",
+    "xapi",
+    "learning-analytics",
+    "lms"
+  ],
+  "license": "MIT"
+}

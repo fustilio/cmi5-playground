@@ -1,0 +1,37 @@
+{
+  "name": "cmi5-engine",
+  "version": "0.0.1",
+  "description": "CMI5 learning engine for evaluating syllabus progress and dependencies - framework-agnostic",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "cmi5-core": "workspace:*"
+  },
+  "devDependencies": {
+    "cmi5-tsconfig": "workspace:*",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "keywords": [
+    "cmi5",
+    "learning-engine",
+    "progress-tracking",
+    "syllabus"
+  ],
+  "license": "MIT"
+}
